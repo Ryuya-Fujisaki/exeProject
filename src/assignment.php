@@ -4,7 +4,7 @@
 
 <body>
   <br>
-  <span>▼▼▼コンテンツ▼▼▼</span><br>
+  <span style="margin: 0 auto">▼▼▼コンテンツ▼▼▼</span><br>
   <?php 
     print_r(dirname(__FILE__).'/');
     print_r(basename(__FILE__)) ;

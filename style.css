@@ -16,7 +16,18 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-    --color-bg: #69F7BE;
+    /* --color-bg: #fffacd; */
+    background-color: #3F51B5;
+    background-size: 10px 10px;
+    background-position: 0 0, 5px 5px;
+    background-image:
+     linear-gradient(45deg,  #303F9F 25%, #303F9F 25%, transparent 25%,
+      transparent 75%, #303F9F 75%, #303F9F 75%),
+     linear-gradient(-135deg, #303F9F 25%, #303F9F 25%, transparent 25%,
+      transparent 75%, #303F9F 75%, #303F9F 75%);
+  
+    
+
     --color-text-main: #000000;
     --color-primary: #FFFF00;
     --wrapper-height: 87vh;
@@ -193,3 +204,40 @@ to this section's matching END comment to see page-specific styles.
   .fileopener:hover {
     border-bottom:3px solid var(--color-secondary);
   }
+
+      /* CSS スタイル */
+      .background-image {
+        width: 100%; /* <div> 要素の幅 */
+        height: 100%; /* <div> 要素の高さ */
+        background-image: url('./src/images/digital.png'); /* 背景画像のパスを指定 */
+        background-size: cover; /* 画像を <div> に合わせて拡大・縮小 */
+        background-repeat: no-repeat; /* 背景画像の繰り返しを無効にする */
+        background-position: center center; /* 画像の中央に配置 */
+        clip-path: polygon(20% 0, 100% 0%, 100% 85%, 95% 100%, 0 100%, 0 10px);
+      }
+      
+      h1 {
+        font-size:5em;
+        text-align:center;
+        line-height:0.95em;
+        font-weight:bold;
+        color: #fff450;
+        text-shadow: 
+          0.04em 0.02em 0 #808080, 
+          0.08em 0.05em 0 rgba(0, 0, 0, 0.6);
+      }
+
+      .img-stretch{
+        padding:0 !important;
+        clip-path: polygon(20% 0, 100% 0%, 100% 85%, 95% 100%, 0 100%, 0 10px);
+      }
+      .img-stretch img{
+        animation: stretch 10s ease infinite alternate;
+      }
+      @keyframes stretch {
+        20% {transform: scale(1.1, 0.9);}
+        40% {transform: scale(0.9, 1.1);}
+        60% {transform: scale(1.1, 0.8);}
+        80% {transform: scale(0.8, 1.1);}
+        100%{transform: scale(1, 1);}
+      }
