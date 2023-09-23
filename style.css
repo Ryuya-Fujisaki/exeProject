@@ -208,16 +208,16 @@ to this section's matching END comment to see page-specific styles.
       /* CSS スタイル */
       .background-image {
         width: 100%; /* <div> 要素の幅 */
-        height: 100%; /* <div> 要素の高さ */
+        height: 700px; /* <div> 要素の高さ */
         background-image: url('./src/images/digital.png'); /* 背景画像のパスを指定 */
-        background-size: cover; /* 画像を <div> に合わせて拡大・縮小 */
+        /* background-size: cover; 画像を <div> に合わせて拡大・縮小 */
         background-repeat: no-repeat; /* 背景画像の繰り返しを無効にする */
         background-position: center center; /* 画像の中央に配置 */
         clip-path: polygon(20% 0, 100% 0%, 100% 85%, 95% 100%, 0 100%, 0 10px);
       }
       
       h1 {
-        font-size:5em;
+        font-size:2em;
         text-align:center;
         line-height:0.95em;
         font-weight:bold;
@@ -241,3 +241,28 @@ to this section's matching END comment to see page-specific styles.
         80% {transform: scale(0.8, 1.1);}
         100%{transform: scale(1, 1);}
       }
+      
+      .flowing {
+      margin: 0;
+      font-size: 2em;
+      font-weight: bold;
+      color: #ff6347;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: flowing-anim 8s;
+      }
+
+      @keyframes flowing-anim {
+      0%{
+          width: 0%;
+        }
+      100%{
+          width: 100%;
+        }
+      }
+
+      .link:hover {  
+        background-color: #eeeeee;  
+        text-decoration: underline;  
+        color: #0000ff;  
+    }  

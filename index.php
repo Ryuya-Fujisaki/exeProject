@@ -11,7 +11,7 @@ include ( dirname(__FILE__) . '/src/template/head.php' ); ?>
     print_r(dirname(__FILE__).'/');
     print_r(basename(__FILE__)) ;
   ?></P>
-  <h1 style="margin: 10px auto 10px; padding-top: 30px">TOP</h1>
+  <h1 style="margin: 10px auto 30px; padding-top: 30px">TOP</h1>
     <div style="display: flex; justify-content: space-around; margin-left: 50px">
     <img 
       style="box-shadow: 20px 20px 0 #325e2b; border-radius: 4px" 

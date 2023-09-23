@@ -4,14 +4,16 @@
 
 <body>
   <br>
-  <span>▼▼▼コンテンツ▼▼▼</span><br>
+  <span style="color: #ffffff; font-size: 8px">▼▼▼コンテンツ▼▼▼</span><br>
+  <div style="height: 300px">
   <?php 
     print_r(dirname(__FILE__).'/');
     print_r(basename(__FILE__)) ;
   ?>
+  </div>
 
   <hr>
-  <h3>
+  <h3 class="flowing">
       すべての課題を実施する必要はありません<br>
       何ができて、何がわからないのか。不明な点があれば、<br>
       en転職のメッセージからご連絡ください。<br>
@@ -23,7 +25,10 @@
   <h3>
     下記の html form から form.php へ post 送信した際<br>
     php 側で『メールアドレス』の取得の記述をお答えください<br>
-    <a href="/src/formTest.php">参考ページ</a>
+    <a 
+      href="/src/formTest.php"
+      onmouseover="this.style.backgroundColor='#eeeeee'; this.style.text-decoration='underline'; this.style.color='#0000ff';"
+    >参考ページ</a>
   </h3>
   <span>
     課題の提出方法は問いません。<br>
@@ -74,13 +79,13 @@
     要件2：画像を３枚以上使用<br>
     要件3：ページを4以上用意<br>
   </h4>
-  <span>
+  <p style="color:#ffffff"><span>
     要件３について<br>
     TOP,プロフィール,ブログ,ギャラリーなどの4ぺ－ジ<br>
     例に上げたページでなくても構いません。
     作りたいものを作ってください。
-  </span>
+  </span></p>
   <br>
-  <span>▲▲▲コンテンツ▲▲▲</span><br>
+  <span style="color: #ffffff; font-size: 8px">▲▲▲コンテンツ▲▲▲</span><br>
 </body>
 </html>
